@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form method="post">
+
+        Nazwisko: <input type="text" id="nazwisko" name="nazwisko"><br><br>
+        Imie: <input type="text" id="imie" name="imie"><br><br>
+        Wiek: <input type="number" id="wiek" name="wiek"><br><br>
+
+        Płeć
+        <div>
+            <input type="radio" id="men" name="plec" value="men">
+            <label for="men">men</label>
+        </div>
+
+        <div>
+            <input type="radio" id="women" name="plec" value="women">
+            <label for="dewey">women</label>
+        </div>
+        <br><br>
+        Telefon: <input type="number" id="telefon" name="telefon"><br><br>
+
+
+
+        <div>
+            <input type="checkbox" id="C#" name="C#" checked>
+            <label for="C#">C#</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="JAVA" name="JAVA">
+            <label for="JAVA">JAVA</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="Angular" name="Angular">
+            <label for="Angular">Angular</label>
+        </div>
+
+        <input type="submit" name="Send">
+    </form>
+
+
+</div>
