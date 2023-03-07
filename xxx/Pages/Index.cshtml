@@ -4,46 +4,62 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+
+
+<h1 class="display-4">Welcome</h1>
     <form method="post">
 
-        Nazwisko: <input type="text" id="nazwisko" name="nazwisko"><br><br>
-        Imie: <input type="text" id="imie" name="imie"><br><br>
-        Wiek: <input type="number" id="wiek" name="wiek"><br><br>
+    Nazwisko:<br> <input type="text" id="nazwisko" name="nazwisko"><br>
+    Imie: <br><input type="text" id="imie" name="imie"><br>
+    Wiek: <br><input type="number" id="wiek" name="wiek" value="18"><br>
 
+    <fieldset>
         Płeć
+
         <div>
             <input type="radio" id="men" name="plec" value="men">
-            <label for="men">men</label>
+            <label for="men">Men</label>
         </div>
 
         <div>
             <input type="radio" id="women" name="plec" value="women">
-            <label for="dewey">women</label>
+            <label for="dewey">Women</label>
         </div>
-        <br><br>
-        Telefon: <input type="number" id="telefon" name="telefon"><br><br>
+    </fieldset>
+        <br>
+    Telefon:<br> 
+    <input type="number" id="telefon" name="telefon" maxlength="9"><br><br>
+
+    Języki programowania:<br>
 
 
 
         <div>
-            <input type="checkbox" id="C#" name="C#" checked>
-            <label for="C#">C#</label>
+        <input type="checkbox"  value="C#" name="jezyk">
+            <label>C#</label>
         </div>
 
         <div>
-            <input type="checkbox" id="JAVA" name="JAVA">
-            <label for="JAVA">JAVA</label>
+        <input type="checkbox" value="C++" name="jezyk">
+            <label>C++</label>
         </div>
 
         <div>
-            <input type="checkbox" id="Angular" name="Angular">
-            <label for="Angular">Angular</label>
+        <input type="checkbox" value="Python" name="jezyk">
+        <label>Python</label>
         </div>
 
-        <input type="submit" name="Send">
+        <div>
+        <input type="checkbox" value="JAVA" name="jezyk">
+            <label>JAVA</label>
+        </div>
+
+        <div>
+        <input type="checkbox" value="Angular" name="jezyk">
+            <label>Angular</label>
+        </div>
+    <br><br>
+        <input type="submit" value="Submit">
     </form>
 
 
-</div>
